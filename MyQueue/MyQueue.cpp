@@ -26,4 +26,40 @@ int main()
 
     cout << "\n\nQueue after pop() : \n";
     MyQueue.print();
+
+    //Extension #1
+    cout << "\n\n Item(2) : " << MyQueue.GetItem(2);
+
+    //Extension #2
+    MyQueue.Reverse();
+    cout << "\n\nQueue after reverse() : \n";
+    MyQueue.print();
+
+    //Extension #3
+    MyQueue.UpdateItem(2, 600);
+    cout << "\n\nQueue after updating Item(2) to 600 : \n";
+    MyQueue.print();
+
+    //Extension #4
+    MyQueue.InsertAfter(2, 800);
+    cout << "\n\nQueue after Inserting 800 after Item(2) : \n";
+    MyQueue.print();
+
+
+    //Extension #5
+    MyQueue.InsertAtFront(1000);
+    cout << "\n\nQueue after Inserting 1000 at front: \n";
+    MyQueue.print();
+
+    //Extension #6
+    MyQueue.InsertAtBack(2000);
+    cout << "\n\nQueue after Inserting 2000 at back: \n";
+    MyQueue.print();
+
+    //Extension #7
+    MyQueue.Clear();
+    cout << "\n\nQueue after Clear(): \n";
+    MyQueue.print();
+
+
 }
